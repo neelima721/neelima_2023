@@ -1,0 +1,193 @@
+Hypertext Markup Language, or HTML for short, is a markup language used to outline the DOM (Document Object Model) of a web page.
+ Supplemented by Javascript and CSS, they are the languages which can be interpreted by web browsers.
+ It is extended from SGML, or after HTML5, XML - which itself is extended from SGML.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Hello, World!</title>
+</head>
+<body>
+
+<section>
+    <h1>Hello, World!</h1>
+</section>
+
+</body>
+</html>
+
+Constructs¶
+HTML has a number of simple constructs, that I will document here, that can be used to produce a simple web page.
+ A number of these constructs come inherently from SGML.
+
+Tags¶
+SGML is a language built around tags. There are three types of tags - opening, closing, and self-closing tags. Combined opening and closing tags are used to form one node within the DOM, as is a singular self-closing tag.
+ Previously (pre-HTML5) self-closing tags were syntactically shown by />, whereas no special syntax is required anymore.
+
+Document Type Declaration¶
+The first line of a HTML, or even as SGML or XML, document should be the document type, or DOCTYPE for short, declaration.
+ Since HTML5's introduction <!DOCTYPE html> can simply be used as HTML from that point on is parsed as its own language, 
+and cannot be parsed by a SGML parser. Prior to HTML5, a dtd file would have to be specified. 
+The dtd file is used to describe the constructs that can be used within a SGML file.
+
+
+Paragraph Text¶
+Perhaps the most simple tag in HTML, is the paragraph text tag. Quite simply, they contain paragraph text and thats it.
+ I think the best way to demonstrate, is an example: <p>Hello, World!</p>
+
+Header Text¶
+There is no better way to structure a document, than by use of headers.
+ There are six sizes: 1-6. Again, the best way to demonstrate is by use of an example: <h1>Hi :D</h1>
+
+Hyperlinks¶
+Hyperlinks are links which reference another document from within a document.
+ For example should I want to make a hyperlink to Donald Trump's Wikipedia page,
+ with the text Donald Trump - I would write: <a href="https://en.wikipedia.org/wiki/Donald_Trump">Donald Trump</a>
+
+
+
+
+
+Web page: is a building block of the websites.
+Website: is a collection of web pages.
+HTML: Stands for Hyper Text Markup Language, it’s used to describe the structure of web pages.
+CSS: Stands for Cascading Style Sheet, CSS defines the display and layout of web pages.
+Browsers: are tools used to surve and visit internet web pages, to visit specific website type in the website URL at the address box.
+Webservers: are the machines that stores and hosts files and documents of your website.
+HTML has three types of Lists:
+Unordered lists <ul>: Used to define lists when order does not matter
+Ordered Lists <ol>: Used to define lists where sequence and order is the significance.
+Definition Lists <dd><dt>: used to describe list of terms and their definitions.
+HTML elements mostly come in pairs of tags, Opening tag and Closing tag
+<br> element used to introduce new line in HTML document and break the current line.
+<hr> element used to insert horizontal rule/line in HTML document.
+<p> element defines paragraphs in HTML.
+<a> element used to describe hyperlinks/links in HTML, links in HTML can be divided into Relative links and Absolute links.
+<img> element inserts images in your HTML document.
+<head> element contains title and meta information of the web page.
+<body> element contains actual contents that will be shown in the browser window.
+<!doctype> is not actually a tag, but a declaration, telling the browser what kind of HTML you are using. Default version is HTML 5.
+<b> element makes characters and texts appear bold.
+CSS stands for Cascading Style Sheets and were developed in 1994.
+CSS Syntax: selector/element {property: value;}
+CSS rule has two main parts: a selector, and one or more declarations.
+CSS selector points to the HTML element you want to style.
+CSS declaration block contains one or more declarations separated by semicolons.
+Each CSS declaration includes a CSS property name and a value, separated by a colon.
+A CSS declaration always ends with a semicolon.
+CSS Selectors are: Type/Element selector, ID selector, Class selector, Group selector
+CSS Type/Element: is used to apply the style using tag name. The type selector selects an element by its type, it represents the element or HTML tag to style.
+CSS ID Selector: Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol.
+CSS Class Selector: Matches an element whose class attribute has a value that matches the one specified after the period (or full stop) symbol.
+CSS Group Selector: Groups multiple selectors in a single style declaration.
+There are three ways of inserting a style sheet: In-line styles, internal style sheets (embedded), External style sheets (linked).
+In-line style is included with the tag it affects. To create an in-line style, simply add the STYLE attribute right into the attribute list of the tag.
+Internal Style Sheets.
+Internal style sheets: all instructions are collected and placed at the top of the HTML document. All instructions must be enclosed within the <STYLE> tag.
+CSS properties can be categorized into: Font attributes, Color attributes, Links attributes, Background attributes and Margins and Alignment.
+Common CSS font-formatting attributes are: font-family, font-style, font-weight, text-align, letter-spacing, text-decoration and text-transform.
+Common CSS color Attributes: color, background and border-color.
+ 
+
+
+Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+With CSS, you can control the color, font, the size of text, the spacing between elements, 
+how elements are positioned and laid out, what background images or background colors are to be used,
+ different displays for different devices and screen sizes, and much more!
+
+Using CSS
+CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+The most common way to add CSS, is to keep the styles in external CSS files. However, 
+in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.
+
+Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element.
+
+An inline CSS uses the style attribute of an HTML element.
+
+The following example sets the text color of the <h1> element to blue, and the text color of the <p> element to red:
+
+Example
+<h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p>
+
+Internal CSS
+An internal CSS is used to define a style for a single HTML page.
+
+An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+
+The following example sets the text color of ALL the <h1> elements (on that page) to blue, and the text color of ALL the <p> elements to red. In addition, the page will be displayed with a "powderblue" background color: 
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+External CSS
+An external style sheet is used to define the style for many HTML pages.
+
+To use an external style sheet, add a link to it in the <head> section of each HTML page:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.
+
+Here is what the "styles.css" file looks like:
+
+"styles.css":
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
